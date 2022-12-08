@@ -1,0 +1,27 @@
+Index: app/src/main/res/layout/activity_fullscreen.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_fullscreen.xml b/app/src/main/res/layout/activity_fullscreen.xml
+--- a/app/src/main/res/layout/activity_fullscreen.xml	
++++ b/app/src/main/res/layout/activity_fullscreen.xml	(date 1670518403065)
+@@ -17,7 +17,7 @@
+         android:gravity="center"
+         android:keepScreenOn="true"
+         android:text="@string/dummy_content"
+-        android:textColor="?attr/fullscreenTextColor"
++        android:textColor="#37474F"
+         android:textSize="50sp"
+         android:textStyle="bold" />
+ 
+@@ -43,7 +43,8 @@
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+-                android:text="@string/dummy_button" />
++                android:text="@string/dummy_button"
++                android:textColor="#80D8FF" />
+ 
+         </LinearLayout>
+     </FrameLayout>
