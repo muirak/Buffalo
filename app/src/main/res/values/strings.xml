@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Buffalo</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+    <string name="logo_description">Logo description</string>
 </resources>

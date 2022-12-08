@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/fullscreenBackgroundColor"
+    android:background="@color/white"
     android:theme="@style/ThemeOverlay.Buffalo.FullscreenContainer"
     tools:context=".FullscreenActivity">
 
+    <!--android:background="?attr/fullscreenBackgroundColor" -->
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
@@ -19,7 +21,8 @@
         android:text="@string/dummy_content"
         android:textColor="#37474F"
         android:textSize="50sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:visibility="invisible" />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
@@ -44,9 +47,19 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/dummy_button"
-                android:textColor="#80D8FF" />
+                android:textColor="#263238" />
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="411dp"
+            android:layout_height="293dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo_description"
+            app:srcCompat="@drawable/ic_buffalo_logo" />
+
+
     </FrameLayout>
 
 </FrameLayout>
